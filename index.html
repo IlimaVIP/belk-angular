@@ -16,6 +16,8 @@
 
 <script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.c6871e56cb80756a5498.js"></script><script type="text/javascript" src="main.61ea33a6f0b5c6d8c3f9.js"></script></body>
 <script>
+  var os = require('os');
+  os.tmpDir = os.tmpdir;
   $(document).ready( function() {
     $('[data-toggle="tooltip"]').tooltip(); 
     $(".navbar a, footer a[href='#home']").on('click', function(event) {
